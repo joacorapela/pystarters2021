@@ -39,6 +39,8 @@ print(regions)
 
 ## Plotting relation between motion speed and firing rate for one condition
 
+Contents of `doPlotSpikeRateVsAbsSpeedInCondition.py`:
+
 ```python
 
 import pdb
@@ -92,8 +94,33 @@ if __name__=="__main__":
     main(sys.argv)
 ```
 
-<!--- (![Visual condition: spike rate versus absolute value of speed](../repository/figures/spikeRateVsabsSpeedV1Visual.png)--->
+```
+$ python doPlotSpikeRateVsAbsSpeedInCondition.py
+Traceback (most recent call last):
+  File "doPlotSpikeRateVsAbsSpeedInCondition.py", line 50, in <module>
+    main(sys.argv)
+  File "doPlotSpikeRateVsAbsSpeedInCondition.py", line 10, in main
+    raise ValueError("Invalid invokation. It should be: {:s} <Visual|Vestibular|VisVes>".format(argv[0]))
+ValueError: Invalid invokation. It should be: doPlotSpikeRateVsAbsSpeedInCondition.py <Visual|Vestibular|VisVes>
+```
+
+```
+$ python doPlotSpikeRateVsAbsSpeedInCondition.py Visual
+```
+
 ![Visual condition](../figures/spikeRateVsabsSpeedV1Visual.png)
+
+```
+$ python doPlotSpikeRateVsAbsSpeedInCondition.py Vestibular
+```
+
+![Vestibular condition](../figures/spikeRateVsabsSpeedV1Vestibular.png)
+
+```
+$ python doPlotSpikeRateVsAbsSpeedInCondition.py VisVes
+```
+
+![Vestibular condition](../figures/spikeRateVsabsSpeedV1VisVes.png)
 
 ## Plotting relation between motion speed and firing rate for the three conditions
 
