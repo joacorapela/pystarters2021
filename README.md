@@ -2,9 +2,9 @@
 
 The main topics we will cover are:
 
-1. Python functions
+1. [Python functions](doc/functions.md)
 2. hands-on practice with git/Github (clone, fork, commit, status, checkout, push, pull)
-3. analysis of V1 responses to self motion in mice
+3. [analysis of V1 responses to self motion in mice](doc/v1Analysis.md)
 
 and we will practice with:
 
