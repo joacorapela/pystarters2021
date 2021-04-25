@@ -1,4 +1,4 @@
-# PyStarters 2021: More python module
+# Functions
 
 ## Function declaration and invokation
 
@@ -62,7 +62,7 @@ or any other function documentation
 help(print)
 ```
 
-## Default argument in function definition
+## Functions can have default arguments
 
 ```python
 def greet(firstName, lastName, msg="Good morning!"):
@@ -82,7 +82,7 @@ greet("Ann", "Robinson")
 greet("Bruce", "Knight", "How do you do?")
 ```
 
-## Non-default arguments cannot follow default arguments in a function definition
+## Non-default arguments cannot follow default arguments in function definitions
 
 ```python
 def greet(msg="Good morning!", firstName, lastName):
