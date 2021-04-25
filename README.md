@@ -4,7 +4,7 @@ The main topics we will cover are:
 
 1. [Python functions](doc/functions.md)
 2. hands-on practice with git/Github (clone, fork, commit, status, checkout, push, pull)
-3. [analysis of electrophysiological neural recordings](doc/v1Analysis.md)
+3. [neural data analysis](doc/neuralDataAnalysis.md)
 
 and we will practice with:
 

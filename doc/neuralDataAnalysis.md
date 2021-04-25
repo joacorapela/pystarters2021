@@ -1,4 +1,4 @@
-# Analysis of V1 electrophysiological recordings
+# Neural data analysis
 
 ## Experiment
 
