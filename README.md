@@ -8,9 +8,9 @@ The main topics we will cover are:
 
 and we will practice with:
 
-. basic pandas
-. basic matplotlib
-. basic regression
-. basic exceptions
-. organizing code in modules
+- basic pandas
+- basic matplotlib
+- basic regression
+- basic exceptions
+- organizing code in modules
 
