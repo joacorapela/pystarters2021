@@ -1,4 +1,6 @@
 figures/*
+!figures/.gitkeep
+
 *.swp
 
 # vim backups
