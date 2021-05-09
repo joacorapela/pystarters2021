@@ -1,4 +1,4 @@
-# PyStarters 2021: Functions and hands-on practice with git/Github, Python functions and neural data analysis (May 13)
+# PyStarters 2021: hands-on practice with git/Github, functions and neural data analysis (May 13)
 
 ## Material
 
