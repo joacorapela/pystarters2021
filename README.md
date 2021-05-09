@@ -32,7 +32,7 @@ Please before the session do the following:
 
 2. in a terminal type `conda activate pystarters` (change `pystarters` with the name that you used for the conda environment you created for the course).
 
-3. in the terminal type `conda install statsmodels`
+3. in the terminal type `pip install statsmodels`
 
 4. in the terminal type `cd <pystarters directory>` where `<pystarters directory>` is the directory you created for the course.
 
