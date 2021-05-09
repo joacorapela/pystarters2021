@@ -18,6 +18,12 @@ We will experiment with the following packages:
 
 and with code organization in modules.
 
+## Neural recordings
+
+We will characterize electrophysiological recordings from mice in the experiment depicted in the figure below probing the integration of visual and vestibular information across the brain.
+
+![visVesIntegration](doc/figures/visVesIntegration.png)
+
 ## Pre-session setup
 
 Please before the session do the following:
