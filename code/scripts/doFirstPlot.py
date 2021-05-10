@@ -19,7 +19,7 @@ def main(argv):
     dataSubset = data.loc[(data["Trial Condition"]==condition) &
                           (data["Region"]=="V1"),:]
     x = abs(dataSubset["Speed"])
-    y = dataSubset["Spike Rate"],
+    y = dataSubset["Spike Rate"]
 
     # Plot the spikes rate as a function of the absolute value of the
     # stimulation speed
