@@ -28,15 +28,17 @@ We will characterize electrophysiological recordings from mice in the experiment
 
 Please before the session do the following.
 
-1. create a Github account (if you don't have one)
+1. create a Github account (if you don't have one) [here](https://github.com/join)
 
 2. install git
 
     - **Windows**
 
-       Follow the instructions [here](https://phoenixnap.com/kb/how-to-install-git-windows) and **Launch Git Bash Shell** as mentioned in section **How to Launch Git in Windows**.
+       Follow the instructions [here](https://phoenixnap.com/kb/how-to-install-git-windows) and **Launch Git Bash Shell** as mentioned in section **How to Launch Git in Windows** of the instructions.
 
-       Use teh git bash shell as the terminal in the following instructions
+       Use the git bash shell as the terminal in the following instructions.
+
+       Follow the instructions [here](https://discuss.codecademy.com/t/setting-up-conda-in-git-bash/534473) to integrate conda with git.
 
     - **Linux and Mac** 
 
@@ -46,6 +48,7 @@ Please before the session do the following.
 
 4. in the terminal type:
 
+    - `pip install matplotlib`
     - `pip install statsmodels`
     - `pip install pandas`
 
