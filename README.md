@@ -20,27 +20,42 @@ and with code organization in modules.
 
 ## Neural recordings
 
-We will characterize electrophysiological recordings from mice in the experiment depicted in the figure below probing the integration of visual and vestibular information across the brain.
+We will characterize electrophysiological recordings from mice in the experiment depicted in the figure below probing the integration of visual and vestibular information across the brain ([Keshavarzi, Tyson, Lenzi et al., 2021](https://www.biorxiv.org/content/10.1101/2021.01.22.427789v4.abstract)).
 
 ![visVesIntegration](doc/figures/visVesIntegration.png)
 
 ## Pre-session setup
 
-Please before the session do the following:
+Please before the session do the following.
 
-1. install git following the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+1. create a Github account (if you don't have one)
 
-2. in a terminal type `conda activate pystarters` (change `pystarters` with the name that you used for the conda environment you created for the course).
+2. install git
 
-3. in the terminal type `pip install statsmodels`
+    - **Windows**
 
-4. in the terminal type `cd <pystarters directory>` where `<pystarters directory>` is the directory you created for the course.
+       Follow the instructions [here](https://phoenixnap.com/kb/how-to-install-git-windows) and **Launch Git Bash Shell** as mentioned in section **How to Launch Git in Windows**.
 
-5. in the terminal type `git clone git@github.com:joacorapela/pystarters2021.git`
+       Use teh git bash shell as the terminal in the following instructions
 
-6. in the terminal type `cd pystarters2021/code/scripts`
+    - **Linux and Mac** 
 
-5. in the terminal type `python doFirstPlot.py Visual`.
+        Follow the instructions [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-If your setup is correct, the last command command should create the plot ../../figures/spikeRateVsabsSpeedV1Visual.png If this plot is not created please email [Joaquin Rapela](mailto:j.rapela@ucl.ac.uk)
+3. in a terminal (or Git Bash Shell if you use Windows) type `conda activate pystarters` (change `pystarters` to the name that you used for the conda environment you created for the course).
+
+4. in the terminal type:
+
+    - `pip install statsmodels`
+    - `pip install pandas`
+
+5. in the terminal type `cd <pystarters directory>` where `<pystarters directory>` is the directory you created for the course.
+
+6. in the terminal type `git clone https://github.com/joacorapela/pystarters2021.git`
+
+7. in the terminal type `cd pystarters2021/code/scripts`
+
+8. in the terminal type `python doFirstPlot.py Visual`.
+
+If your setup is correct, the last command command should create the plot `<pystarters directory>/figures/spikeRateVsabsSpeedV1Visual.png`. If this plot is not created please email [Joaquin Rapela](mailto:j.rapela@ucl.ac.uk) to troubleshoot the problem.
 
