@@ -22,7 +22,7 @@ and with code organization in modules.
 
 We will characterize electrophysiological recordings from mice in the experiment depicted in the figure below probing the integration of visual and vestibular information across the brain ([Keshavarzi, Tyson, Lenzi et al., 2021](https://www.biorxiv.org/content/10.1101/2021.01.22.427789v4.abstract)).
 
-![visVesIntegration](doc/figures/visVesIntegration.png)
+[![visVesIntegration](doc/figures/visVesIntegration.png)](http://www.gatsby.ucl.ac.uk/~rapela/sepi/videos/sepi.mov)
 
 ## Pre-session setup
 
