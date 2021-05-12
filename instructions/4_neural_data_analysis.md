@@ -98,10 +98,17 @@ Modules are Python files that group functions with related functionality
 1. generate a plot with three rows and two columns. In the left column show Region=V1 and in the right column show Region=RSPg. For this you could to add a parameter region to plot_panel.
 ![2cols](figures/spikeRateVsabsSpeedV1RSPd_allConditions.png)
 2. add `../src/plotting.py` and `doPlotsCodeFromHellImproved.py` to git
+3. push to GitHub
 
-. Show:
-    . git diff: compare the version of ./doPlotsCodeFromHellImproved.py in the working directory with that in the previous commit.
-    . git checkout: go back to the previous version.
-    . git push
-    . push solutions
-    . ask participants to run git pull
+### More git
+
+1. `git diff`: compare the version of `doPlotsCodeFromHellImproved.py` in the working directory with that in the previous commit.
+
+2. `git checkout`: go back to the previous version.
+
+3. I will now push solutions to my repository.
+
+4. In your forked repository press on `Fetch upstream`
+
+5. In your terminal type `git pull` to get ths solutions.
+
