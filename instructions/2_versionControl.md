@@ -121,5 +121,10 @@ We now have in GitHub a copy of our local repository
 
 Check that myFirstScript.py is now in GitHub!!!
 
+7. If someone updates the GitHub repository and you want to update your local repository use:
+
+```
+git pull
+```
 
 
