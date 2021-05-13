@@ -23,9 +23,9 @@ Version control allows us to easily merge changes in different working copies of
 In the command line (or Git Bash on Windows) type
 
 ```
-git config --global user.name <your_user_name>
-git config --global user.email <your_email_address>
-git config --global core.editor "nano -w"
+$ git config --global user.name <your_user_name>
+$ git config --global user.email <your_email_address>
+$ git config --global core.editor "nano -w"
 
 ```
 
@@ -34,19 +34,19 @@ git config --global core.editor "nano -w"
 First go to the directory you created in the Unix Shell part. In a terminal type
 
 ```
-cd <pystarters>/myFirstRepo
+$ cd <pystarters>/myFirstRepo
 ```
 
 Next, create a git repository by typing in the terminal
 
 ```
-git init
+$ git init
 ```
 
 Verify that git was initialized by typing
 
 ```
-ls -a
+$ ls -a
 ```
 
 which should show a `.git` directory.
@@ -58,33 +58,33 @@ The process used to add a file to version control is shown in the figure below
 ![git-add-process](figures/git-staging-area.svg)
 
 ```
-cd <pystarters>/myFirstRepo/code/scripts
+$ cd <pystarters>/myFirstRepo/code/scripts
 ```
 
 ```
-git status
+$ git status
 ```
 
 The “untracked files” message means that there’s a file in the directory that Git isn’t keeping track of. We can tell Git to track a file using git add:
 
 ```
-git add myFirstScript.py
+$ git add myFirstScript.py
 ```
 
 and then check that the right thing happened:
 
 ```
-git status
+$ git status
 ```
 
 Let's commit now
 
 ```
-git commit -m "Added"
+$ git commit -m "Added"
 ```
 
 ```
-git status
+$ git status
 ```
 
 ## Remotes in GitHub
@@ -108,12 +108,12 @@ We now have an empty GitHub repository
 5. Got to your terminal and type
 
 ```
-git remote add origin https://github.com/<your-github-username>/myPyStarters2021Repo.git
+$ git remote add origin https://github.com/<your-github-username>/myPyStarters2021Repo.git
 ```
 6. In the terminal type
 
 ```
-git push -u origin master
+$ git push -u origin master
 ```
 We now have in GitHub a copy of our local repository
 
@@ -124,7 +124,7 @@ Check that myFirstScript.py is now in GitHub!!!
 7. If someone updates the GitHub repository and you want to update your local repository use:
 
 ```
-git pull
+$ git pull
 ```
 
 
