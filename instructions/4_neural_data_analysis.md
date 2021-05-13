@@ -73,7 +73,7 @@ $ python doPlotsCodeFromHell.py
 ## Improve the code from hell
 
 ```
-cp doPlotsCodeFromHell.py doPlotsCodeFromHellImproved.py
+$ cp doPlotsCodeFromHell.py doPlotsCodeFromHellImproved.py
 ```
 
 ### Exercise
