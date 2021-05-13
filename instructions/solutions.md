@@ -46,8 +46,10 @@ plot_1D_data(x, y, xlabel="data", ylabel="predictions",
 plt.show()
 ```
 Default parameters:
+
 ![3_exercise1_default](figures/3_exercise1_default_params.png)
 
 Custom parameters:
+
 ![3_exercise1_custom](figures/3_exercise1_custom_params.png)
 
