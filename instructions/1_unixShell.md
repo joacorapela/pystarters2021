@@ -81,7 +81,7 @@ $ ls
 myFirstScript.py
 ```
 
-## Exercises
+## Exercise 1
 
 1. create the following directory structure
 
@@ -119,7 +119,7 @@ $ ls <pystarters dir>/testRepo1/data/x.csv
 <pystarters dir>/testRepo1/data/x.csv
 ```
 
-## More exercises
+## Exercise 2
 
 3. move `myFirstScript.py` to the `scripts` directory
 
