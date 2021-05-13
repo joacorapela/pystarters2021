@@ -4,7 +4,7 @@
 
 This session will only use a text editor to write code and a terminal to run it (no PyCharm needed). We will cover:
 
-1. Basic use of git and Github (clone, commit, status, checkout, push, pull).
+1. Basic use of git and Github (add, commit, status, checkout, push, pull, clone, fork).
 
 2. Python functions, positional and keyword arguments.
 
