@@ -14,7 +14,8 @@ y = np.genfromtxt("../../data/y.csv")
 plt.plot(x, y)
 plt.show()
 ```
-![1exercise2](figures/1_exercise2.png)
+
+![1-exercise2](figures/1_exercise2.png)
 
 # 3_functions.md
 
