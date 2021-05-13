@@ -81,22 +81,6 @@ $ ls
 myFirstScript.py
 ```
 
-## Relative and absolute file/directory paths
-
-If you are in the `scripts` directory you can refer to a file `x.csv` in the `data` directory using a relative or absolute file path:
-
-**relative file path**
-```
-$ ls ../../data/x.csv
-../../data/x.csv
-```
-
-**absolute file path**
-```
-$ ls <pystarters dir>/testRepo1/data/x.csv
-<pystarters dir>/testRepo1/data/x.csv
-```
-
 ## Exercises
 
 1. create the following directory structure
@@ -119,6 +103,24 @@ $ ls <pystarters dir>/testRepo1/data/x.csv
     - create a file `x.csv` with five numbers of your choice, one number per row
     - create a file `y.csv` with five numbers of your choice, one number per row
 
+## Relative and absolute file/directory paths
+
+If you are in the `scripts` directory you can refer to a file `x.csv` in the `data` directory using a relative or absolute file path:
+
+**relative file path**
+```
+$ ls ../../data/x.csv
+../../data/x.csv
+```
+
+**absolute file path**
+```
+$ ls <pystarters dir>/testRepo1/data/x.csv
+<pystarters dir>/testRepo1/data/x.csv
+```
+
+## More exercises
+
 3. move `myFirstScript.py` to the `scripts` directory
 
 4. edit `myFirstScript.py` and add code for:
@@ -127,4 +129,7 @@ $ ls <pystarters dir>/testRepo1/data/x.csv
     - use the package `matplotlib` to plot `x` and `y`
 
 5. execute `myFirstScript.py`
-        
+       
+``` 
+$ python myFirstScript.py
+``` 
