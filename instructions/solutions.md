@@ -379,16 +379,25 @@ if __name__=="__main__":
 
 4. `git push`
 
-## Excercise 4
-
-1. To compare the current version of `doPlotsCodeFromHellImproved.py` with the version that generated the plot in item one of Exercise 3, I first need to find the commit number corresponding to the later version. For this I type in the terminal:
+5. To compare the current version of `doPlotsCodeFromHellImproved.py` with the version that generated the plot in item one, I first need to find the commit number corresponding to the latter version. For this I type in the terminal:
 
 ```
-git log doPlotsCodeFromHellImproved.py
+$ git log doPlotsCodeFromHellImproved.py
 ```
 
-to obtain an output that contains the following line
+to obtain the following output:
 
-<span style="color:blue">Hello World!</span>.
+![log_doPlotsCodeFromHellImproved](figures/log_doPlotsCodeFromHellImproved.png)
 
+that tells me that I want to compare the version of `doPlotsCodeFromHellImproved.py` with that I first generated to plot two panels (commit message: *Plotting two panels*, commit ID: 4dcd1895f64ce6d3b03d42d8c5005d208fc46568). I do this by typing:
+
+```
+$ git diff 4dcd1895f64ce6d3b03d42d8c5005d208fc46568 -- doPlotsCodeFromHellImproved.py
+```
+
+to obtain the following output:
+
+![diff_doPlotsCodeFromHellImproved](figures/diff_doPlotsCodeFromHellImproved.png)
+
+that tells that I changed the `figFilenamePattern` and added `plt.tight_layout()`
 

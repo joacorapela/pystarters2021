@@ -78,9 +78,8 @@ $ cp doPlotsCodeFromHell.py doPlotsCodeFromHellImproved.py
 
 ### Exercise 1
 
-1. create function `plot_panel` and modify the code to invoke it
-2. `git status`
-3. add `doPlotsCodeFromHellImproved.py` to git
+1. create a function `plot_panel` if the script `doPlotsCodeFromHellImproved.py` and modify the script to invoke it
+2. add `doPlotsCodeFromHellImproved.py` to version control
 
 ### Modules
 
@@ -88,23 +87,28 @@ Modules are Python files that group functions with related functionality
 
 ### Exercise 2
 
-1. create a plotting.py module in the directory `../src`
-2. moving `plotting_panel` from `doPlotsCodeFromHellImproved.py` to the new plotting.py module
-3. import `plotting` in `doPlotsCodeFromHellImproved.py`
-4. add `../src/plotting.py` and `doPlotsCodeFromHellImproved.py` to git
+1. create a `plotting.py` file in the directory `../src`
+
+   move `plotting_panel` from `doPlotsCodeFromHellImproved.py` to the `plotting` module
+
+   import `plotting` in `doPlotsCodeFromHellImproved.py`
+
+2. add `../src/plotting.py` to git
+3. update `doPlotsCodeFromHellImproved.py` in git
 
 ### Exercise 3
 
-1. generate a plot with three rows and two columns. In the left column show Region=V1 and in the right column show Region=RSPg. For this you could to add a parameter region to plot_panel.
-![2cols](figures/spikeRateVsabsSpeedV1RSPd_allConditions.png)
-2. add `../src/plotting.py` and `doPlotsCodeFromHellImproved.py` to git
-3. push to GitHub
+1. generate a plot with three rows and two columns. In the left column show Region=V1 and in the right column show Region=RSPg. For this you could to add a parameter `region` to `plot_panel`.
 
-### Exercise 4
+![2cols](figures/spikeRateVsabsSpeedV1RSPg_allConditions.png)
 
-1. `git diff`: compare the version of `doPlotsCodeFromHellImproved.py` in the working directory with that in the previous commit.
+2. update `../src/plotting.py` and `doPlotsCodeFromHellImproved.py` in git
 
-2. `git checkout`: recover the first version of `doPlotsCodeFromHellImproved.py`.
+3. change `plot_panel` to improve the plot (e.g., avoid overlap of labels)
 
-3. `git checkout`: restore the latest version of `doPlotsCodeFromHellImproved.py`.
+![2cols](figures/spikeRateVsabsSpeedV1RSPg_allConditions_neat.png)
+
+4. push to GitHub
+
+5. Use `git diff` to find out what changes in `doPlotsCodeFromHellImproved.py` and in `plotting.py` allowed to improve the plot in item 3 with respect to that in item 1.
 
