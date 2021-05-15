@@ -28,9 +28,10 @@ def plot_panel(condition, region, data, ax,
     predicted = fit.params[0]+x*fit.params[1] # line equation
     ax.plot(x, predicted, color=regression_line_color, label=legend_label)
     ax.legend(loc=legend_loc)
-    ax.set_xlabel(xlabel)
-    ax.set_ylabel(ylabel)
+    if ax.is_last_row():
+        ax.set_xlabel(xlabel)
+    if ax.is_first_col() and not ax.is_first_row() and not ax.is_last_row():
+        ax.set_ylabel(ylabel)
     if title is None:
         title = "{:s}: {:s}".format(condition, region)
     ax.set_title(title)
-
