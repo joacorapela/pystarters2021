@@ -55,7 +55,7 @@ Custom parameters:
 
 ![3_exercise1_custom](figures/3_exercise1_custom_params.png)
 
-# 4_neural_data_analysis.md
+# 4_neuralDataAnalysis.md
 
 ## Excercise 1
 
