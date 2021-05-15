@@ -1,11 +1,10 @@
 
-import pdb
 import sys
 import pandas as pd
 import statsmodels.api as sm
 import matplotlib.pyplot as plt
 
-def plot_panel(condition, data, ax, title=None):
+def plot_panel(condition, data, ax):
     # Extract the subset of the data corresponding to the condition
     # and recordings from V1
     dataSubset = data.loc[(data["Trial Condition"]==condition) &
@@ -30,9 +29,7 @@ def plot_panel(condition, data, ax, title=None):
     ax.legend(loc="upper left")
     ax.set_xlabel("Abs(Speed)")
     ax.set_ylabel("Spike Rate")
-    if title is None:
-        title = condition
-    ax.set_title(title)
+    ax.set_title(condition)
 
 def main(argv):
     dataFilename = "../../data/All_three_exp_conditions_4.csv"
@@ -43,14 +40,11 @@ def main(argv):
 
     plot_panel(condition="Visual", data=data, ax=axs[0])
     plot_panel(condition="Vestibular", data=data, ax=axs[1])
-    plot_panel(condition="VisVes", data=data, ax=axs[2],
-               title="Visual + Vestibular")
+    plot_panel(condition="VisVes", data=data, ax=axs[2])
 
     plt.savefig(figFilename)
 
     plt.show()
-
-    pdb.set_trace()
 
 if __name__=="__main__":
     main(sys.argv)
