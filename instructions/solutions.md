@@ -383,7 +383,11 @@ if __name__=="__main__":
 $ git status
 ```
 
-that reports that `doPlotsCodeFromHellImproved.py` and `plotting.py` have been modified.
+that outputs:
+
+![modified_final_plot](figures/git_modified_final_plot_improvement.png)
+
+indicating that `doPlotsCodeFromHellImproved.py` and `plotting.py` have been modified.
 
 To add their changes to the git repository I type in the terminal:
 
