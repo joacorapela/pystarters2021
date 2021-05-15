@@ -292,7 +292,7 @@ if __name__=="__main__":
 
    `git add doPlotsCodeFromHellImproved.py`
 
-   `git commit -m "Plotting two regions"`
+   `git commit -m "Plotting two panels"`
 
 3. To improve the plot I changed `plot_panel` to only plot the ylabel for the first column and the xlabel for the last row. File `code/src/plotting.py`
 
@@ -377,7 +377,28 @@ if __name__=="__main__":
     main(sys.argv)
 ```
 
-4. `git push`
+4. First I want to find the working files that have been modified with respect to their copies in the repository. For this I type:
+
+```
+$ git status
+```
+
+that reports that `doPlotsCodeFromHellImproved.py` and `plotting.py` have been modified.
+
+To add their changes to the git repository I type in the terminal:
+
+```
+$ git add doPlotsCodeFromHellImproved.py
+$ git commit -m "Added plt.tight_layout()"
+$ git add ../src/plotting.py
+$ git commit -m "Only adding xlabel and ylabels in first column and last row"
+```
+
+Finally I push the changes of my local git repository to Github
+
+```
+$ git push
+```
 
 5. To compare the current version of `doPlotsCodeFromHellImproved.py` with the version that generated the plot in item one, I first need to find the commit number corresponding to the latter version. For this I type in the terminal:
 
@@ -389,7 +410,7 @@ to obtain the following output:
 
 ![log_doPlotsCodeFromHellImproved](figures/log_doPlotsCodeFromHellImproved.png)
 
-that tells me that I want to compare the version of `doPlotsCodeFromHellImproved.py` with that I first generated to plot two panels (commit message: *Plotting two panels*, commit ID: 4dcd1895f64ce6d3b03d42d8c5005d208fc46568). I do this by typing:
+that tells me that I want to compare the current version of `doPlotsCodeFromHellImproved.py` with that I first generated to plot two panels (commit message: *Plotting two panels*, commit ID: 4dcd1895f64ce6d3b03d42d8c5005d208fc46568). I do this by typing:
 
 ```
 $ git diff 4dcd1895f64ce6d3b03d42d8c5005d208fc46568 -- doPlotsCodeFromHellImproved.py

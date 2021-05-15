@@ -104,11 +104,11 @@ Modules are Python files that group functions with related functionality
 
 2. update `../src/plotting.py` and `doPlotsCodeFromHellImproved.py` in git
 
-3. change `plot_panel` to improve the plot (e.g., avoid overlap of labels)
+3. improve the plot (e.g., avoid overlap of labels)
 
 ![2cols](figures/spikeRateVsabsSpeedV1RSPg_allConditions_neat.png)
 
-4. push to GitHub
+4. add the changes of the modified code to git and push to GitHub
 
-5. Use `git diff` to find out what changes in `doPlotsCodeFromHellImproved.py` and in `plotting.py` allowed to improve the plot in item 3 with respect to that in item 1.
+5. use `git diff` to find out what changes in `doPlotsCodeFromHellImproved.py` and in `plotting.py` allowed to improve the plot in item 3 with respect to that in item 1.
 
