@@ -76,7 +76,7 @@ $ python doPlotsCodeFromHell.py
 $ cp doPlotsCodeFromHell.py doPlotsCodeFromHellImproved.py
 ```
 
-### Exercise
+### Exercise 1
 
 1. create function `plot_panel` and modify the code to invoke it
 2. `git status`
@@ -86,29 +86,25 @@ $ cp doPlotsCodeFromHell.py doPlotsCodeFromHellImproved.py
 
 Modules are Python files that group functions with related functionality
 
-### Exercise
+### Exercise 2
 
 1. create a plotting.py module in the directory `../src`
 2. moving `plotting_panel` from `doPlotsCodeFromHellImproved.py` to the new plotting.py module
 3. import `plotting` in `doPlotsCodeFromHellImproved.py`
 4. add `../src/plotting.py` and `doPlotsCodeFromHellImproved.py` to git
 
-### Exercise
+### Exercise 3
 
 1. generate a plot with three rows and two columns. In the left column show Region=V1 and in the right column show Region=RSPg. For this you could to add a parameter region to plot_panel.
 ![2cols](figures/spikeRateVsabsSpeedV1RSPd_allConditions.png)
 2. add `../src/plotting.py` and `doPlotsCodeFromHellImproved.py` to git
 3. push to GitHub
 
-### More git
+### Exercise 4
 
 1. `git diff`: compare the version of `doPlotsCodeFromHellImproved.py` in the working directory with that in the previous commit.
 
-2. `git checkout`: go back to the previous version.
+2. `git checkout`: recover the first version of `doPlotsCodeFromHellImproved.py`.
 
-3. I will now push solutions to my repository.
-
-4. In your forked repository press on `Fetch upstream`
-
-5. In your terminal type `git pull` to get ths solutions.
+3. `git checkout`: restore the latest version of `doPlotsCodeFromHellImproved.py`.
 
