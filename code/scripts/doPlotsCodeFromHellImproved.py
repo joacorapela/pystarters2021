@@ -7,7 +7,7 @@ import plotting
 
 def main(argv):
     dataFilename = "../../data/All_three_exp_conditions_4.csv"
-    figFilename = "../../figures/spikeRateVsabsSpeedV1RSPg_allConditions.png"
+    figFilename = "../../figures/spikeRateVsabsSpeedV1RSPg_allConditions_neat.png"
     data = pd.read_csv(dataFilename, index_col=0)
 
     fig, axs = plt.subplots(3, 2)
@@ -25,6 +25,8 @@ def main(argv):
                         ax=axs[1, 1])
     plotting.plot_panel(condition="VisVes", region="RSPg", data=data,
                         ax=axs[2, 1], title="V1: Visual + Vestibular")
+
+    plt.tight_layout()
 
     plt.savefig(figFilename)
 
