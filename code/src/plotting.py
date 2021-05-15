@@ -1,14 +1,15 @@
 
 import statsmodels.api as sm
 
-def plot_panel(condition, data, ax, xlabel="abs(Speed)", ylabel="Spike Rate", 
+def plot_panel(condition, region, data, ax,
+               xlabel="abs(Speed)", ylabel="Spike Rate",
                title=None, data_color="gray", regression_line_color="red",
                line_style="solid", legend_loc="upper left",
                legend_label_pattern="p={:.04f}"):
     # Extract the subset of the data corresponding to the condition
     # and recordings from V1
     dataSubset = data.loc[(data["Trial Condition"]==condition) &
-                          (data["Region"]=="V1"),:]
+                          (data["Region"]==region),:]
     x = abs(dataSubset["Speed"])
     y = dataSubset["Spike Rate"]
 
@@ -30,6 +31,6 @@ def plot_panel(condition, data, ax, xlabel="abs(Speed)", ylabel="Spike Rate",
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
     if title is None:
-        title = condition
+        title = "{:s}: {:s}".format(condition, region)
     ax.set_title(title)
 
